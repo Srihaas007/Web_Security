@@ -1,0 +1,141 @@
+.collection .collection-item.avatar .title{
+    font-weight: bold;
+    color: black;
+}
+.rating {
+    direction: rtl; /* Left to right */
+  }
+  
+  .rating input {
+    display: none; /* Hide the actual radio button */
+  }
+  
+  .rating label {
+    color: #ccc; /* Default star color */
+    font-size: 36px; /* Increased size of the stars */
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label,
+  .rating input:checked ~ label {
+    color: #FFD700; /* Golden yellow color for filled stars */
+  }
+  
+  
+  /* Reset some default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Style for tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+table th,
+table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style for buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for flash messages */
+.flash {
+  color: #fff;
+  background-color: #d9534f;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  table {
+      font-size: 16px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+}
+
+.nav-wrapper .input-field input[type=search] {
+  height: inherit;
+  padding-left: 4rem;
+  width: calc(100% - 4rem);
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-top: 1rem;
+  margin-top:1rem;
+  
+}
+
+.input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons {
+  position:absolute;
+  top:-1rem;
+  right: -3rem;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+  
+}

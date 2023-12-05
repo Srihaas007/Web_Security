@@ -1,0 +1,26 @@
+.collection .collection-item.avatar .title{
+    font-weight: bold;
+    color: black;
+}
+.rating {
+    direction: rtl; /* Left to right */
+  }
+  
+  .rating input {
+    display: none; /* Hide the actual radio button */
+  }
+  
+  .rating label {
+    color: #ccc; /* Default star color */
+    font-size: 36px; /* Increased size of the stars */
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label,
+  .rating input:checked ~ label {
+    color: #FFD700; /* Golden yellow color for filled stars */
+  }
+  
+  

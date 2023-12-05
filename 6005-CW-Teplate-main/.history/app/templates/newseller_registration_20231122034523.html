@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="col s6 offset-s3">
+    <h1>{% if is_seller %}Seller{% else %}Become Seller{% endif %}</h1>
+    <form method="POST" action="{{ url_for('seller') }}">
+      <div class="input-field">
+        <input id="email" name="email" type="email">
+        <label for="email">Email Address</label>
+      </div>
+      <!-- Add password input field if needed -->
+      <div class="input-field">
+        <input id="password" name="password" type="password">
+        <label for="password">Password</label>
+      </div>
+      <button class="waves-effect waves-light btn" type="submit">{% if is_seller %}Seller{% else %}Become Seller{% endif %}</button>
+    </form>
+  </div>
+  
+{% endblock content %}
